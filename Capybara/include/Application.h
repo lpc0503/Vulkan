@@ -6,9 +6,9 @@
 #ifndef VULKAN_APPLICATION_H
 #define VULKAN_APPLICATION_H
 
-#include "../Capybara.h"
+#include "Capybara.h"
 
-namespace Capybara {
+namespace CAPYBARA {
 
 class Application {
 

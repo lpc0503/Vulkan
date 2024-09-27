@@ -7,6 +7,7 @@
 #define VULKAN_LOG_H
 
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Capybara {
 

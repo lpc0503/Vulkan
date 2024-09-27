@@ -19,6 +19,7 @@ namespace Capybara {
     }
 
     void Log::init() {
+        
         spdlog::set_pattern("%^[%T] %n: %v%$");
         m_CoreLogger = spdlog::stdout_color_mt("CAPYBARA");
         m_CoreLogger->set_level(spdlog::level::trace);

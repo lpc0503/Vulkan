@@ -5,7 +5,7 @@
 #include "Capybara.h"
 #include "EntryPoint.h"
 
-class Sandbox : public Capybara::Application {
+class Sandbox : public CAPYBARA::Application {
 
 public:
 
@@ -22,7 +22,7 @@ public:
 };
 
 
-Capybara::Application* Capybara::createApplication() {
+CAPYBARA::Application* CAPYBARA::createApplication() {
 
     return new Sandbox();
 }

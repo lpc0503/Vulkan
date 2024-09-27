@@ -1,15 +1,13 @@
 #pragma once
 
-extern Capybara::Application* Capybara::createApplication();
+extern CAPYBARA::Application* CAPYBARA::createApplication();
 
 int main() {
 
     Capybara::Log::init();
     CAPYBARA_CORE_INFO("Log initialized");
-    CAPYBARA_CLIENT_INFO("I am {} years old", 26);
 
-
-    auto app = Capybara::createApplication();
+    auto app = CAPYBARA::createApplication();
     CAPYBARA_CORE_INFO("Application created");
 
     app->run();
