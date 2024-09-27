@@ -4,13 +4,18 @@ extern Capybara::Application* Capybara::createApplication();
 
 int main() {
 
-    std::cout << "Entry point" << std::endl;
+    Capybara::Log::init();
+    CAPYBARA_CORE_INFO("Log initialized");
+    CAPYBARA_CLIENT_INFO("I am {} years old", 26);
+
+
     auto app = Capybara::createApplication();
-    std::cout << "Application created" << std::endl;
+    CAPYBARA_CORE_INFO("Application created");
+
     app->run();
-    std::cout << "Application running" << std::endl;
+    CAPYBARA_CORE_INFO("Application finished");
+
     delete app;
-    std::cout << "Application deleted" << std::endl;
 
     return 0;
 }
